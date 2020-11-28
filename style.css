@@ -1,72 +1,137 @@
-html, head, body, div, a, p, h1 {
-    margin: 0px, 0px, 0px, 0px;
-    padding: 0px, 0px, 0px, 0px
+html,
+head,
+body,
+div,
+a,
+p,
+h1 {
+  margin: 0px, 0px, 0px, 0px;
+  padding: 0px, 0px, 0px, 0px;
 }
 
 body {
-    width: 1300px;
-    margin: 0 auto;
-    background-color: #888;
+  width: 1300px;
+  background-color: #888;
+  position: relative;
+}
+
+html,
+body {
+  margin: 0 auto 0 auto;
+  height: 100%;
 }
 
 #chatArea {
-    height: 565px;
-    background-color: #aaa;
+  height: 710px;
+  background-color: #aaa;
+  top: 140px;
+  overflow: auto;
+  position: relative;
 }
 
 #userInput {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-bottom: 30px;
-    background-color: #eee;
-    display: flex;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+  background-color: #eee;
+  display: flex;
+  position: absolute;
+  bottom: 0;
 }
 
 #commentArea {
-    width: 1000px;
+  width: 1000px;
 }
 
 #header {
-    background-color: #fff;
-    padding-bottom: 10px;
-    padding-top: 10px;
+  background-color: #fff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: absolute;
+  width: 1300px;
+  height: 130px;
 }
 
 #header p {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 #header h1 {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 #submitButton {
-    color: blue;
-    margin-left: 15px;
-    font-size: 13pt;
+  color: blue;
+  margin-left: 15px;
+  font-size: 13pt;
+}
+
+#submitButton:hover {
+  cursor: pointer;
 }
 
 #comment {
-    display: flex;  
-    justify-content: space-between;
-    align-items: center;
-    width: 1278px;
-    background-color: #ddd;
-    margin-left: 10px;
-    margin-top: 5px;
-
+  display: flex;
+  align-items: center;
+  width: 1278px;
+  background-color: #ddd;
+  margin-left: auto;
+  margin-top: 5px;
 }
 
 #nameDiv {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #change {
-    /* margin-left: 1050px; */
-    display: flex;
-    align-items: center;
+  margin-left: 1175px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
 }
 
-#edit {
-    padding-right: 7px;
+.edit {
+  padding-right: 7px;
+}
+
+.edit:hover {
+  cursor: pointer;
+}
+
+#remove:hover {
+  cursor: pointer;
+}
+
+.hiddenEdit {
+  align-self: flex-start;
+}
+
+.hidden {
+  display: none;
+}
+
+#hiddenSubmitButton:hover {
+  cursor: pointer;
+}
+
+#hiddenCommentArea {
+  width: 1000px;
+}
+
+.addedstuff.edit {
+    color: blue;
+}
+
+#remove {
+    color: blue;
+}
+
+#nameDiv {
+    font-weight: 200;
+}
+
+#hiddenSubmitButton {
+    color: blue;
 }
